@@ -1,5 +1,5 @@
                                                             LSA-Practical_6033
-                                                              Practical no.1
+                                                              PRACTICAL NO.1
 Aim: Installation of DHCP Server in Ubuntu 16.04
 
 Theory:
