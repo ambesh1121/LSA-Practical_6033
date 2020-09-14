@@ -1,0 +1,42 @@
+                                                            LSA-Practical_6033
+                                                              Practical no.1
+Aim: Installation of DHCP Server in Ubuntu 16.04
+
+Theory:
+Dynamic Host Configuration Protocol(DHCP) is a network management protocol used to automate the process
+of configuring devices on IP networks.
+A DHCP server dynamically assigns an IP address and other network configuration parameters to each
+device on a network so they can communicate with other IP networks.
+DHCP is a client-server protocol in which servers manage a pool of unique IP addresses, as well as
+information about client configuration parameters, and assign addresses out of those address pools.	
+
+Every device on a TCP/IP-based network must have a unique unicast IP address to access the network
+and its resources. Without DHCP, IP addresses for new computers or computers that are moved from 
+one subnet to another must be configured manually; IP addresses for computers that are removed from 
+the network must be manually reclaimed.
+
+DHCP-enabled clients send a request to the DHCP server whenever they connect to a network.
+
+ADVANTAGES of DHCP:-
+(1)Centralized management of IP addresses.
+(2)The implementation does not require any additional costs.
+(3)Ease of adding new clients to a network.
+
+
+DISADVANTAGES of DHCP:-
+(1)DHCP server can be single point of failure in networks having only one configured DHCP server.
+(2)The machine name does not change when new IP address is assigned.
+
+
+Steps to install the DHCP Server
+(1)Command to install dhcp-server:  
+   kali@ambesh:~$sudo apt install -y isc-dhcp-server
+(2)Then configure your dhcpd.conf by directly editing through a path : 
+   kali@ambesh:~$sudo nano/etc/dhcp/dhcpd.conf
+(3)You can get to know about your ip address by: 
+   $kali@ambesh:~$ip addr
+(4)We then configure the subnet and the netmask(dhcpd.conf),then just save the file and exit
+(5)Then to enable the services use the command:
+   kali@ambesh:~$sudo systemctl enable isc-dhcp-server.service
+(6)Then start the service : 
+   kali@ambesh:~$sudo systemctl start isc-dhcp-server.service
