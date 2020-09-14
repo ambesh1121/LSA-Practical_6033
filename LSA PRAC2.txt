@@ -15,7 +15,7 @@
 
 (4)List of services running: Command to list the currently active and running services:- $sudo systemctl
 
-(5)Command to enable a service:                 $sudo systemctl enable <service_name>
+ (5)Command to enable a service:                 $vice_nsudo systemctl enable <serame>
 					     Eg: $sudo systemctl enable isc-dhcp-server.service 
     Command to start a service:                  $sudo systemctl start <service_name>
 					     Eg: $sudo systemctl start isc-dhcp-server.service	
