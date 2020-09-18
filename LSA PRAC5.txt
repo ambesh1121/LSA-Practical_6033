@@ -4,7 +4,16 @@ Aim:Samba server.
 
 
 Theory:
-
+ 
+Samba is a open source software.
+Samba uses TCP/IP protocol.
+Samba is Linux implementation of SMB/CIFS protocols.
+Samba allows interoperability between Linux and Window.
+Samba provide file and print sharing service between Linux and Window system.
+Samba allows Linux to interact with Window client, Server, member of Active Directory, Primary domain controller, or member server.
+Samba support Microsoft Access Control Lists.
+Main configuration file of Samba server is /etc/samba/smb.conf
+ 
 Commands:
 
 1)smbd
