@@ -30,13 +30,13 @@ DISADVANTAGES of DHCP:-
 
 Steps to install the DHCP Server
 (1)Command to install dhcp-server:  
-   kali@ambesh:~$sudo apt install -y isc-dhcp-server
+   ambesh@kali:~$sudo apt install -y isc-dhcp-server
 (2)Then configure your dhcpd.conf by directly editing through a path : 
-   kali@ambesh:~$sudo nano/etc/dhcp/dhcpd.conf
+   ambesh@kali:~$sudo nano/etc/dhcp/dhcpd.conf
 (3)You can get to know about your ip address by: 
-   $kali@ambesh:~$ip addr
+   $ambesh@kali:~$ip addr
 (4)We then configure the subnet and the netmask(dhcpd.conf),then just save the file and exit
 (5)Then to enable the services use the command:
-   kali@ambesh:~$sudo systemctl enable isc-dhcp-server.service
+   ambesh@kali:~$sudo systemctl enable isc-dhcp-server.service
 (6)Then start the service : 
-   kali@ambesh:~$sudo systemctl start isc-dhcp-server.service
+   ambesh@kali:~$sudo systemctl start isc-dhcp-server.service
