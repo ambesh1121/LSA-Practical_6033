@@ -1,4 +1,4 @@
-                                                            LSA-Practical_6033
+                                                            Practical No.2
                                                              
 (1) Adding a user: A user is a person who utilizes a computer or network service.
                    A user the one who works on the machine or have the permissions to read, write and execute particular or all files.
