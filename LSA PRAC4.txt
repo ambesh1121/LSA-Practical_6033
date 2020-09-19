@@ -1,0 +1,40 @@
+
+Aim: SSH server
+
+Theory:
+
+Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.
+
+Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH.
+
+SSH provides a secure channel over an unsecured network by using a client–server architecture, 
+connecting an SSH client application with an SSH server.
+The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. 
+The standard TCP port for SSH is 22. 
+SSH is generally used to access Unix-like operating systems, but it can also be used on Microsoft Windows. 
+Windows 10 uses OpenSSH as its default SSH client and SSH server.
+
+
+
+
+
+Steps and Commands:
+
+1) Command to install ssh server:
+   ambesh@kali:~$ sudo dpkf -l openssh-server		(OR)
+
+   ambesh@kali:~$ sudo apt-get -y install openssh-server
+
+2) Command to enable a service:  
+   ambesh@kali:~$ sudo systemctl enable ssh
+
+3) Command to status a service:  
+   ambesh@kali:~$ sudo systemctl status ssh
+
+4) Now To configure user's server to allow incoming SSH connections, user can use this command: 
+   ambesh@kali:~$ sudo ufw allow ssh
+
+5) After this user can connect to the ssh localhost by the command:
+   ambesh@kali:~$ ssh localhost
+
+  User can enter the root password to connect to the localhost
