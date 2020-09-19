@@ -1,3 +1,8 @@
+                                                                     Practical No.4
+
+
+
+
 A Network File System (NFS) allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. 
 This enables system administrators to consolidate resources onto centralized servers on the network.
 The server stores data on its disks and the clients may request data through some protocol messages.
