@@ -1,1 +1,42 @@
-JJ
+                                                                    Practical No.6
+
+Aim: NFS
+
+
+Theory:
+
+NFS(Network File System) is basically developed for sharing of files and folders between Linux/Unix systems by Sun Microsystems in 1980. 
+It allows you to mount your local file systems over a network and remote hosts to interact with them as they are mounted locally on the same system.
+A Network File System (NFS) allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. 
+This enables system administrators to consolidate resources onto centralized servers on the network.
+Currently, there are three versions of NFS. NFS version 2 (NFSv2) is older and widely supported. 
+NFS version 3 (NFSv3) supports safe asynchronous writes and is more robust at error handling than NFSv2;it also supports 64-bit file sizes and offsets
+
+
+Commands:
+
+sudo apt-get -y install kernel-server
+sudo apt-get -y install nfs-kernel-server
+sudo systemct1 enable nfs-kernel-server
+
+mkdir demo_dir
+vi a.txt
+ls a.txt
+mv a.txt demo_dir
+ls/home/ambesh/demo_dir
+
+sudo vi /etc/exports
+cat /etc/exports
+
+write this in /etc/exports
+/home/ambesh/demo_dir 127.0.0.1(rw) 
+
+sudo exportfs -ra
+
+sudo apt-get  -y install nfs-common
+sudo mkdir /home/ambesh_directory
+
+sudo mount -t nfs 127.0.01:/home/ambesh/demo_dir /home/ambesh_directory
+
+cd /home/ambesh_directory
+ls
